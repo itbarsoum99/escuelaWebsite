@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto+Mono&display=swap');
+
+* {
+  --ms-scrollbar-width: none;
+  scrollbar-width: none;
+   -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #333;
+  color: #ddd;
+  margin: 0;
+  padding: 50px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  margin: auto;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: 2em;
+  margin-block-start: 0em;
+}
+h2 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  font-size: 1.6em;
+}
+.padbottom {
+  padding-bottom: 10vh;
+}
+
+::selection {
+  background-color: transparent;
+}
+
+section {
+    border-left: 1px solid #ddd;
+  width: fit-content;
+  padding: 0 50px 15px 50px;
+  margin: auto;
+  max-width: 45vw;
+
+}
+#copy {
+  margin-block-end: 0px;
+}
+a {
+  color: #ddd;
+  transition: 0.1s;
+}
+
+a:hover {
+  color: #333;
+  background-color: #ffff00;
+}
+
+@media (max-width: 900px) {
+  section {
+    max-width: 70vw;
+  }
+}
+
+@media (max-width: 650px) {
+  section {
+    max-width: 95vw;
+  }
+}
